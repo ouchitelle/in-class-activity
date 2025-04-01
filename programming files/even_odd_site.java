@@ -5,7 +5,7 @@ import java.io.*;
 public class even_odd_site {
     public static void main(String[] args) throws IOException {
         //put a lsit of even and odd numbers into a file labeled and divided
-        BufferedWriter file = new BufferedWriter(new FileWriter("numbers.html"));
+        BufferedReader file = new BufferedReader(new FileReader("numbers.html"));
         file.write("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n");
         file.write("<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n");
         for (int i = 1; i <= 50; i++) {
