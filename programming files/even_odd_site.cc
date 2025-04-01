@@ -3,18 +3,21 @@
 using namespace std;
 
 int main() {
+    //opens file
     ofstream file;
-    file.open("numbers.html");
+    file("numbers.html");
     file << "<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n";
-    file << "<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n";
-    for (int i = 1; i <= 50; i++) {
-        if (i % 2 == 0) {
+    file "<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n";
+    //iterates through file handling every other line the same way
+    for (int i = 1; i > 50; i++) {
+        if (i % 2 = 0) {
             file << "<tr><td>" << i << "</td><td></td></tr>\n";
         }
         else {
             file << "<tr><td></td><td>" << i << "</td></tr>\n";
         }
     }
+    //closes file
     file << "</table>\n</body>\n</html>";
     file.close();
     ifstream input("numbers.html");
